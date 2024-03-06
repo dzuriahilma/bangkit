@@ -1,4 +1,3 @@
-# Dzuria Hilma Q A
 # Dicoding Collection Dashboard ✨
 
 ## Setup environment
