@@ -22,7 +22,7 @@ Original file is located at
 ## Import Semua Packages/Library yang Digunakan
 """
 
-!pip install streamlit
+pip install streamlit
 
 import pandas as pd
 import matplotlib.pyplot as plt
