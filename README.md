@@ -9,5 +9,4 @@ pip install numpy pandas scipy matplotlib seaborn streamlit
 
 ## Run steamlit app
 ```
-streamlit run Dzuria_Hilma_Qurotu_Ain_Proyek_Analisis_Data_ecommerce.ipynb
-``
+streamlit run dzuria_hilma_qurotu_ain_proyek_analisis_data.py
