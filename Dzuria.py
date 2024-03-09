@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
+# Menonaktifkan peringatan PyplotGlobalUseWarning
+st.set_option('deprecation.showPyplotGlobalUse', False) 
+
 sns.set(style='dark')
 
 # Set tema Streamlit
@@ -52,7 +55,7 @@ if selected_tab == "Sebaran negara":
     plt.ylabel(None)
     plt.xlabel(None)
     plt.tick_params(axis='y', labelsize=12)
-    plt.show()
+    st.pyplot()
 
 # Tab "Jenis Pembayaran"
 elif selected_tab == "Jenis Pembayaran":
@@ -78,7 +81,7 @@ elif selected_tab == "Jenis Pembayaran":
     plt.ylabel(None)
     plt.xlabel(None)
     plt.tick_params(axis='y', labelsize=12)
-    plt.show()
+    st.pyplot()
 
 # Tab "Review Customer"
 elif selected_tab == "Review Customer":
@@ -101,7 +104,7 @@ elif selected_tab == "Review Customer":
     )
 
     plt.title('Proporsi Review Score Customer')
-    plt.show()
+    st.pyplot()
 
 # Tab "Korelasi"
 elif selected_tab == "Korelasi":
@@ -120,6 +123,6 @@ elif selected_tab == "Korelasi":
 
     # membuat scatter plot antara harga dan ongkos kirim
     sns.scatterplot(x=all_data['price'], y=all_data['freight_value'])
-    plt.show()
+    st.pyplot()
 
 st.caption("Copyright by DzuriaHilma")
