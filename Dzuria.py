@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Membaca data CSV dari GitHub
-all_data = pd.read_csv("https://github.com/dzuriahilma/bangkit/blob/main/all_data_marge.csv")
+all_data = pd.read_csv("https://raw.githubusercontent.com/dzuriahilma/bangkit/main/all_data_marge.csv")
 
 # Header Streamlit dengan judul menarik
 st.title('🛍️ Dashboard terkait E-Commerce🛍️')
